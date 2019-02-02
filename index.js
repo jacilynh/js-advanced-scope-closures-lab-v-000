@@ -3,8 +3,7 @@
 // function that will return `false` if the trip is over 10 blocks distance and
 // `true` if the distance is within range. 
 function produceDrivingRange(range) {
-  return function (start, end) {
-    let distance = Math.abs(start - end);
+  return function (distance) {
     let inRange = Math.abs(range - distance);
 
     if (distance > range) {
