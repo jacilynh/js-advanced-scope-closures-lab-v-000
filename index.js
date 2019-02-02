@@ -15,9 +15,8 @@ function produceDrivingRange(maxDistance) {
 // Returns a function that calculates a tip. For example, `produceTipCalculator(.10)` returns a function that calculates ten percent tip on a fare. `produceTipCalculator(.20)` returns a function that calculates twenty percent tip on a fare.
 function produceTipCalculator(percent) {
   return function(fare) {
-    return
-  }
-  
+    return percent * fare;
+  };
 }
 
 // returns a Driver class. The class has
