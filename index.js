@@ -5,7 +5,9 @@
 // function that we can then use to calculate if a trip is too large for a driver.
 // We recommend referencing the `test/indexTest.js` for more details.
 function produceDrivingRange(distance) {
-  return function()
+  return function(checkDistance){
+    if distance > checkDistance
+  }
   
 }
 
