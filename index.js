@@ -6,9 +6,13 @@
 // We recommend referencing the `test/indexTest.js` for more details.
 function produceDrivingRange(distance) {
   return function(checkDistance){
-    if distance > checkDistance
-  }
-  
+    if (distance > checkDistance) {
+      return false;
+    }
+    else if (distance <= checkDistance) {
+      return true;
+    };
+  };
 }
 
 // Returns a function that then calculates a tip. For
