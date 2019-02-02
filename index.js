@@ -5,7 +5,7 @@
 function produceDrivingRange(distance) {
   return function(blockRange){
     if (distance > blockRange) {
-      return false;
+      return `${`;
     }
     else if (distance <= blockRange) {
       return true;
