@@ -2,15 +2,18 @@
 // given trip is within range. For example, `produceDrivingRange(10)` returns a
 // function that will return `false` if the trip is over 10 blocks distance and
 // `true` if the distance is within range. 
-function produceDrivingRange(distance) {
-  return function(blockRange){
-    if (distance > blockRange) {
-      return `${`;
+function produceDrivingRange(range) {
+  return function (start, end) {
+    let distance = Math.abs(start.slice(0, 2) - end.slice(0, 2));
+    let inRange = Math.abs(range - distance);
+
+    if (distance > range) {
+      return `${inRange} blocks out of range`;
     }
-    else if (distance <= blockRange) {
-      return true;
-    };
-  };
+    else {
+      return `within range by ${inRange}`
+    }
+  }
 }
 
 // Returns a function that then calculates a tip. For
