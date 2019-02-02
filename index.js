@@ -7,7 +7,7 @@ function produceDrivingRange(maxDistance) {
     let pathDistance = Math.abs(parseInt(start) - parseInt(end));
     let diff = Math.abs(maxDistance - pathDistance);
 
-    if (pathDistance > maxRange) {
+    if (pathDistance > maxDistance) {
       return `${diff} blocks out of range`;
     }
     else {
