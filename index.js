@@ -4,7 +4,7 @@
 // `true` if the distance is within range. 
 function produceDrivingRange(range) {
   return function (start, end) {
-    let distance = Math.abs(start.slice(0, 2) - end.slice(0, 2));
+    let distance = Math.abs(start - end);
     let inRange = Math.abs(range - distance);
 
     if (distance > range) {
