@@ -6,10 +6,10 @@
 // We recommend referencing the `test/indexTest.js` for more details.
 function produceDrivingRange(distance) {
   return function(blockRange){
-    if (distance > checkDistance) {
+    if (distance > blockRange) {
       return false;
     }
-    else if (distance <= checkDistance) {
+    else if (distance <= blockRange) {
       return true;
     };
   };
